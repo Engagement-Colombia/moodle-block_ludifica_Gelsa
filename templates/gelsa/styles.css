@@ -1,0 +1,945 @@
+.block_ludifica {
+    background: url('pix/bg1_ludifica.png') no-repeat center center;
+    background-color: #383a70;
+    min-height: 650px;
+    background-size: cover;
+}
+
+#block_ludifica_2 {
+    margin-top: -15px;
+}
+
+.block_ludifica .gelsa-btn {
+    width: 130px;
+    height: 44px;
+    margin-top: 15px;
+    background-color: #f6d052;
+    border: none;
+    color: #2d3351;
+    display: flex;
+    border-radius: 30px 10px 10px 30px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    box-sizing: border-box;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 32%);
+    transition: 0.1s ease;
+    transform: scale(1, 1);
+}
+
+.block_ludifica .gelsa-btn::before {
+    height: 44px;
+    min-width: 44px;
+    position: relative;
+    left: 0;
+    content: '';
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -13px;
+    background: #eaaf0a url('pix/icons.png') no-repeat center center / cover;
+    transform: rotate(0deg);
+    transition: 0.3s ease;
+    box-shadow: 0 0 0 0 #f6d052;
+}
+
+.block_ludifica .gelsa-btn:hover {
+    box-shadow: 0 0 10px 0 rgb(45, 51, 81);
+    transform: scale(1.2, 1.2);
+    background-color: #2d3351;
+    /* stylelint-disable-next-line declaration-no-important */
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.block_ludifica .gelsa-btns {
+    position: absolute;
+    top: 260px;
+    right: 15px;
+}
+
+.block_ludifica .gelsa-btns .gelsa-btn:hover::before {
+    transform: rotate(-20deg);
+    box-shadow: 0 0 10px 0 #f6d052;
+}
+
+.block_ludifica .gelsa-btns span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.block_ludifica .gelsa-btns .badges-btn::before {
+    background-position-x: -1px;
+}
+
+.block_ludifica .gelsa-btns .top-btn::before {
+    background-position-x: -323px;
+}
+
+.block_ludifica .gelsa-btns .avatars-btn::before {
+    background-position-x: -582px;
+}
+
+.block_ludifica .gelsa-btns .store-btn::before {
+    background-position-x: -76px;
+}
+
+.block_ludifica [data-ludifica-tab="profile"]::before {
+    background-position-x: -640px;
+}
+
+.block_ludifica .showrankingbutton {
+    font-size: 20px;
+    background-color: #3db1d1;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+    border: none;
+    color: #2d3351;
+}
+
+.block_ludifica .avatar-box > div:first-child {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ludifica_stats {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    max-width: 300px;
+}
+
+.ludifica_stats > h2,
+.ludifica_stats > div {
+    margin-top: 7px;
+    background-color: #2d3351aa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+    font-weight: bold;
+}
+
+.ludifica_stats > h2 {
+    top: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ludifica_stats > h2 .quickeditlink {
+    display: flex;
+}
+
+.ludifica_stats > h2:hover {
+    background-color: #3db1d1;
+    color: #2d3351;
+}
+
+.ludifica_stats > h2 a,
+.ludifica_stats > div {
+    /* stylelint-disable-next-line declaration-no-important */
+    color: #3db1d1 !important;
+}
+
+.ludifica_stats > div {
+    top: 196px;
+    max-width: 230px;
+}
+
+.block_ludifica .showhelpsbutton {
+    margin: 10px 0;
+    color: #2d3351;
+    background-color: #3db1d1;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.block_ludifica .showhelpsbutton .icon {
+    margin-left: 4px;
+}
+
+.block_ludifica .showhelpsbutton.activebtn .icon {
+    margin-left: 2px;
+}
+
+.ludifica_stats > h2,
+.block_ludifica .showhelpsbutton .icon {
+    font-size: 24px;
+}
+
+.block_ludifica .ludifica_help,
+.ludifica_stats > h2 a .icon {
+    color: #fff;
+}
+
+.block_ludifica .avatar-box {
+    background: none;
+    display: inline;
+    padding: 0;
+}
+
+.ludificalevel {
+    background-color: #2d3351cc;
+    color: #3db1d1;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 409px;
+    left: -15px;
+    margin-left: -103px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+    z-index: 1;
+}
+
+.ludificalevel .ludifica_help {
+    transform: rotate(90deg);
+}
+
+.block_ludifica .showhelpsbutton.activebtn,
+.block_ludifica .showrankingbutton.activebtn,
+.block_ludifica .showrankingbutton.activebtn:hover {
+    background-color: #ff82a9;
+}
+
+.block_ludifica .tab-dynamichelps.showhelps,
+.block_ludifica .tabranking.showranking {
+    background: linear-gradient(90deg, rgba(61, 177, 209, 0) 0%, rgba(61, 177, 209, 1) 46%);
+    animation: appearright_gelsa 0.2s ease-in-out;
+    right: 16px;
+    left: inherit;
+    top: 80px;
+    width: 75%;
+    padding-left: 21%;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 16px 0 17px 0 rgb(0 0 0 / 50%);
+}
+
+.block_ludifica .tabranking.showranking .rankingheader {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.block_ludifica .rankingheader button {
+    background-color: #2d3351;
+    box-shadow: 0 0 16px 0 #2d335170;
+    color: #3db1d1;
+    border: none;
+}
+
+.block_ludifica .rankingheader button:hover {
+    background-color: #3db1d1;
+    color: #2d3351;
+}
+
+@keyframes appearright_gelsa {
+    0% {
+        opacity: 0;
+        right: 50px;
+    }
+    100% {
+        opacity: 1;
+        right: 16px;
+    }
+}
+
+.block_ludifica .generaltable {
+    color: #fff;
+    border-radius: 10px;
+}
+
+.block_ludifica .generaltable p,
+.closeludifica:hover {
+    color: #fff;
+}
+
+.block_ludifica .showranking .generaltable {
+    width: 100%;
+}
+
+.block_ludifica .generaltable th {
+    background-color: #2d3351;
+}
+
+.block_ludifica .generaltable th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.block_ludifica .generaltable th:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.block_ludifica .generaltable thead th,
+.block_ludifica .generaltable td {
+    border: none;
+}
+
+.block_ludifica .generaltable .current-user p,
+.block_ludifica .block_ludifica-tabcontent.showranking h3,
+.block_ludifica .block_ludifica-tabcontent.showhelps h3 {
+    background: none;
+    color: #2d3351;
+    text-shadow: none;
+}
+
+.block_ludifica .generaltable .current-user td {
+    background-color: #f6d052;
+    color: #2d3351;
+}
+
+.block_ludifica .generaltable .current-user td:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.block_ludifica .generaltable .current-user td:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.block_ludifica .tabranking .generaltable tr {
+    background: none;
+}
+
+.block_ludifica .tab-dynamichelps .card {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.block_ludifica .tab-dynamichelps .card strong {
+    color: #3db1d1;
+}
+
+.block_ludifica .tab-dynamichelps.showhelps .card strong,
+.closeludifica,
+.ludifica_stats > h2:hover a {
+    /* stylelint-disable-next-line declaration-no-important */
+    color: #2d3351 !important;
+}
+
+.block_ludifica .tab-dynamichelps.showhelps .card-body {
+    padding: 0;
+}
+
+.block_ludifica .tab-dynamichelps .card .icon {
+    color: #f6d052;
+}
+
+.block_ludifica .tab-dynamichelps .card .card-header {
+    font-weight: bolder;
+    background: none;
+    border: none;
+}
+
+.block_ludifica .tab-dynamichelps.showhelps .card .card-header {
+    text-align: right;
+    padding: 20px 0;
+    color: #2d3351;
+}
+
+.block_ludifica .tab-dynamichelps .card .list-group-item {
+    background: none;
+    border: none;
+    margin-left: -15px;
+}
+
+.block_ludifica-tabcontent.showhelps h3 {
+    text-align: right;
+}
+
+.block_ludifica-tabcontent.tab-dynamichelps h3 {
+    margin-top: 35px;
+}
+
+.block_ludifica .userbadges-ludifica {
+    background: linear-gradient(0deg, rgba(45, 51, 81, 1) 24%, rgba(45, 51, 81, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    padding: 35px 0 15px 0;
+    border-radius: 0.5rem;
+    width: 100%;
+    flex-direction: column;
+    right: 0;
+}
+
+.block_ludifica .userbadges-ludifica .btn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #f6d052;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+    border: none;
+    font-weight: bold;
+}
+
+.block_ludifica .userbadges-ludifica .btn:hover {
+    background-color: #eaaf0a;
+}
+
+.block_ludifica .userbadges-ludifica > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block_ludifica .userbadges-ludifica .onebadge img {
+    width: 90px;
+}
+
+.block_ludifica .tab-profile {
+    background-size: contain;
+    background-position-x: center;
+}
+
+.block_ludifica-tabs {
+    display: flex;
+    background-color: #fff;
+    border-bottom: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+}
+
+.block_ludifica-tabcontent {
+    position: relative;
+}
+
+.block_ludifica-tabcontent h3,
+.block_ludifica-tabcontent h5 {
+    color: #f6d052;
+    font-weight: bolder;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.531);
+}
+
+.block_ludifica h5 {
+    color: #3db1d1;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.531);
+}
+
+#page-blocks-ludifica-badges .gelsa-btns .badges-btn,
+#page-blocks-ludifica-avatars .gelsa-btns .avatars-btn,
+#page-blocks-ludifica-tickets .gelsa-btns .store-btn,
+.block_ludifica .tab-profile .gelsa-btns [data-ludifica-tab="profile"] {
+    box-shadow: 0 0 10px 0 rgb(45, 51, 81);
+    transform: scale(1.2, 1.2);
+    background-color: #2d3351;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #eaaf0a;
+    pointer-events: none;
+    position: relative;
+    left: -12px;
+}
+
+#page-blocks-ludifica-badges .gelsa-btns .badges-btn::before,
+#page-blocks-ludifica-avatars .gelsa-btns .avatars-btn::before,
+#page-blocks-ludifica-tickets .gelsa-btns .store-btn::before,
+.block_ludifica .tab-profile .gelsa-btns [data-ludifica-tab="profile"]::before {
+    box-shadow: 0 0 10px 0 #f6d052;
+    top: -2px;
+}
+
+[data-region="blocks-column"] .block_ludifica .avatar-box,
+.drawer .block_ludifica .avatar-box {
+    background: none;
+    padding: 0;
+}
+
+[data-region="blocks-column"] .ludificalevel,
+.drawer .ludificalevel {
+    top: 130px;
+    padding: 5px;
+    width: auto;
+    left: 5px;
+}
+
+[data-region="blocks-column"] .block_ludifica .avatar-box > div,
+.drawer .block_ludifica .avatar-box > div {
+    align-items: center;
+    flex-direction: row;
+}
+
+[data-region="blocks-column"] .ludifica_stats,
+.drawer .ludifica_stats {
+    position: unset;
+    max-width: unset;
+    align-items: center;
+}
+
+[data-region="blocks-column"] .ludifica_stats > h2,
+.drawer .ludifica_stats > h2,
+[data-region="blocks-column"] .ludifica_stats > div,
+.drawer .ludifica_stats > div {
+    max-width: unset;
+    margin-bottom: 10px;
+}
+
+[data-region="blocks-column"] .block_ludifica-tabs,
+.drawer .block_ludifica-tabs {
+    min-height: 143px;
+    align-items: center;
+}
+
+[data-region="blocks-column"] .block_ludifica-tabs.iconsonly,
+[data-region="blocks-column"] .block_ludifica-tabs.iconsonly.incourse,
+.drawer .block_ludifica-tabs.iconsonly,
+.drawer .block_ludifica-tabs.iconsonly.incourse {
+    min-height: auto;
+}
+
+[data-region="blocks-column"] .block_ludifica-tabs.incourse,
+.drawer .block_ludifica-tabs.incourse {
+    min-height: 184px;
+}
+
+[data-region="blocks-column"] .block_ludifica .tab-dynamichelps.showhelps.incourse,
+.drawer .block_ludifica .tab-dynamichelps.showhelps.incourse,
+[data-region="blocks-column"] .block_ludifica .tabranking.showranking.incourse,
+.drawer .block_ludifica .tabranking.showranking.incourse {
+    top: 324px;
+}
+
+[data-region="blocks-column"] .block_ludifica .gelsa-btns,
+[data-region="blocks-column"] .block_ludifica .userbadges-ludifica,
+.drawer .block_ludifica .userbadges-ludifica,
+.drawer .block_ludifica .gelsa-btns {
+    position: unset;
+    background: none;
+}
+
+[data-region="blocks-column"] .block_ludifica .gelsa-btns,
+.drawer .block_ludifica .gelsa-btns {
+    position: unset;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+[data-region="blocks-column"] .block_ludifica .player_info,
+.drawer .block_ludifica .player_info {
+    min-height: 250px;
+}
+
+[data-region="blocks-column"] .block_ludifica .tab-profile,
+.drawer .block_ludifica .tab-profile {
+    background-position: center top;
+    position: relative;
+}
+
+[data-region="blocks-column"] .block_ludifica .tab-dynamichelps.showhelps,
+[data-region="blocks-column"] .block_ludifica .tabranking.showranking,
+.drawer .block_ludifica .tab-dynamichelps.showhelps,
+.drawer .block_ludifica .tabranking.showranking {
+    background-color: #3db1d1;
+}
+
+.block_ludifica #avatars-list > div {
+    transform: perspective(1px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    margin: 10px;
+}
+
+.block_ludifica #avatars-list > div:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+#page-blocks-ludifica-avatars .store-tabs,
+#page-blocks-ludifica-tickets .store-tabs,
+#page-blocks-ludifica-badges .store-tabs {
+    display: none;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .oneavatar .card {
+    box-shadow: 0 0 0 0 #f6d052;
+    filter: contrast(100%) brightness(100%);
+    background: none;
+    border: 1px solid #eaaf0a;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .userhas .card {
+    background-color: #f6d052;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .userhas .card-header {
+    /* stylelint-disable-next-line declaration-no-important */
+    color: #31345e !important;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .oneavatar,
+#page-blocks-ludifica-badges #badges-list .onebadge,
+#page-blocks-ludifica-tickets #tickets-list .oneticket {
+    width: 300px;
+    max-width: 300px;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .oneavatar:hover .card {
+    box-shadow: 0 0 20px 0 #f6d052;
+    animation: hover-animation 0.3s forwards;
+    background-color: #f6d052;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .oneavatar:hover .card-header {
+    background-color: #f6d052;
+    /* stylelint-disable-next-line declaration-no-important */
+    color: #31345e !important;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .inuse .card {
+    border: 1px solid #3db1d1;
+    background-color: #3db1d1;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .inuse:hover .card {
+    box-shadow: 0 0 20px 0 #3db1d1;
+    animation: hover-animation 0.3s forwards;
+    background-color: #3db1d1;
+}
+
+@keyframes hover-animation {
+    0%,
+    100% {
+        filter: contrast(100%) brightness(100%);
+    }
+    50% {
+        filter: contrast(150%) brightness(150%);
+    }
+}
+
+#page-blocks-ludifica-avatars #avatars-list .oneavatar .card .card-header {
+    color: #f6d052;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .oneavatar .btn-primary,
+#page-blocks-ludifica-tickets #tickets-list .oneticket .btn-primary {
+    background-color: #2d3351;
+    border: 1px solid #3db1d1;
+    color: #fff;
+    margin: 5px;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .oneavatar .btn-primary:hover,
+#page-blocks-ludifica-tickets #tickets-list .oneticket .btn-primary:hover,
+#page-blocks-ludifica-badges #badges-list .openshare:hover {
+    background-color: #eaaf0a;
+    color: #2d3351;
+    border: 1px solid #2d3351;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .card-footer,
+#page-blocks-ludifica-tickets #tickets-list .card-footer {
+    padding: 5px;
+    margin: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+#page-blocks-ludifica-avatars #avatars-list .inuse .used {
+    color: #f6d052;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+.block_ludifica #avatars-list .oneavatar .description p {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #fff;
+    color: #fff;
+}
+
+.block_ludifica #avatars-list .oneavatar:hover .description p {
+    color: #2d3351;
+    border-top: 1px solid #2d3351;
+}
+
+.block_ludifica #avatars-list .inuse .description p,
+.block_ludifica #avatars-list .userhas .description p {
+    color: #2d3351;
+    border-top: 1px solid #2d3351;
+}
+
+#page-blocks-ludifica-tickets #tickets-list,
+#page-blocks-ludifica-badges #badges-list,
+#page-blocks-ludifica-avatars #avatars-list {
+    width: 75%;
+}
+
+.block_ludifica .btncanedit {
+    background-color: #3db1d1;
+    font-weight: bolder;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+    margin: 20px 0;
+}
+
+.block_ludifica #tickets-list .picture-box img {
+    display: block;
+    margin: auto;
+}
+
+.block_ludifica #tickets-list .card {
+    background: none;
+    border: 1px solid #3db1d1;
+    color: #fff;
+    box-shadow: 0 0 0 0 #3db1d1;
+    filter: contrast(100%) brightness(100%);
+    transform: perspective(1px);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.block_ludifica #tickets-list .card:hover {
+    box-shadow: 0 0 20px 0 #3db1d1;
+    animation: hover-animation 0.3s forwards;
+    background-color: #3db1d1;
+    transform: scale(1.1) rotate(2deg);
+}
+
+.block_ludifica #tickets-list .card-header {
+    font-size: 19px;
+    text-align: center;
+    color: #3db1d1;
+    background: none;
+    border: none;
+}
+
+.block_ludifica #tickets-list .card-footer {
+    background: none;
+    border: none;
+}
+
+.block_ludifica #tickets-list .moreinfo-ticket {
+    color: #3db1d1;
+    position: absolute;
+    right: 0;
+}
+
+.block_ludifica #tickets-list {
+    margin-top: 15px;
+}
+
+.block_ludifica #tickets-list .card:hover,
+.block_ludifica #tickets-list .card:hover .card-header,
+.block_ludifica #tickets-list .card:hover .card-header .moreinfo-ticket {
+    color: #2d3351;
+}
+
+.block_ludifica #tickets-list .description {
+    width: 80%;
+    padding-top: 10px;
+    margin: auto;
+    border-top: 1px solid #fff;
+}
+
+.block_ludifica #tickets-list .card:hover .description {
+    border-top: 1px solid #2d3351;
+}
+
+.block_ludifica #tickets-list .card .info-box strong {
+    color: #e59428;
+}
+
+.block_ludifica #tickets-list .card:hover .info-box strong,
+.block_ludifica .rankingheader + p,
+.block_ludifica .notavailableyet {
+    color: #fff;
+}
+
+.block_ludifica p {
+    font-size: 14px;
+}
+
+.block_ludifica #badges-list .card {
+    background: none;
+    border: 1px solid #f6d052;
+    color: #fff;
+    box-shadow: 0 0 0 0 #f6d052;
+    filter: contrast(100%) brightness(100%);
+    transform: perspective(1px);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.block_ludifica #badges-list .card:hover {
+    box-shadow: 0 0 20px 0 #f6d052;
+    background-color: #f6d052;
+    animation: hover-animation 0.3s forwards;
+    transform: scale(1.1) rotate(2deg);
+}
+
+.block_ludifica #badges-list .unavailable .card {
+    background: none;
+    animation: none;
+    transform: none;
+    box-shadow: unset;
+}
+
+.block_ludifica #badges-list .unavailable .card:hover .card-header,
+.block_ludifica #badges-list .unavailable .card:hover .info-box {
+    color: #fff;
+}
+
+.block_ludifica #badges-list .unavailable .openshare {
+    display: none;
+}
+
+.block_ludifica #badges-list .card-header {
+    font-size: 19px;
+    text-align: center;
+    color: #f6d052;
+    background: none;
+    border: none;
+}
+
+.block_ludifica #badges-list .courseinfo {
+    text-align: center;
+    padding: 5px;
+}
+
+.block_ludifica #badges-list .card:hover .card-header,
+.block_ludifica #badges-list .card:hover .info-box {
+    color: #2d3351;
+}
+
+.block_ludifica #badges-list .card-footer {
+    background: none;
+    border: none;
+}
+
+#badges-list .onebadge .badgecontent,
+.block_ludifica .card-title.d-inline {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: block !important;
+}
+
+.block_ludifica #badges-list {
+    margin-top: 15px;
+}
+
+.block_ludifica #badges-list .picture-box img {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.block_ludifica #badges-list .openshare {
+    display: block;
+    margin: auto;
+    background-color: #2d3351;
+    border: 1px solid #3db1d1;
+    color: #fff;
+}
+
+.block_ludifica #badges-list .openshare i {
+    color: #3db1d1;
+}
+
+.block_ludifica #badges-list .openshare:hover i {
+    color: #2d3351;
+}
+
+.block_ludifica #badges-list .expirebadge {
+    text-align: right;
+}
+
+.block_ludifica #badges-list .unavailablewarning {
+    color: #e59428;
+}
+
+.block_ludifica.ludifica-page .card,
+.block_ludifica.ludifica-page .btn {
+    border-radius: 0.5rem;
+}
+
+.block_ludifica #avatars-list .card:hover .thumbnail,
+.block_ludifica #badges-list .card:hover .thumbnail,
+.block_ludifica #tickets-list .card:hover .thumbnail {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.ludifica-page {
+    padding: 25px;
+}
+
+.ludifica-page.block_ludifica .gelsa-btns {
+    right: 85px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .block_ludifica .ludifica_stats {
+        position: unset;
+        max-width: unset;
+        align-items: center;
+    }
+
+    .block_ludifica .ludifica_stats > div,
+    .block_ludifica .ludifica_stats > h2 {
+        max-width: unset;
+    }
+
+    .block_ludifica .userbadges-ludifica {
+        position: unset;
+    }
+
+    .block_ludifica .gelsa-btns {
+        position: unset;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .block_ludifica .player_info {
+        min-height: 250px;
+    }
+
+    .ludifica-page.block_ludifica .gelsa-btns {
+        /* stylelint-disable-next-line declaration-no-important */
+        right: 15px !important;
+    }
+
+    .block_ludifica .ludificalevel {
+        /*transform: rotate(0);
+        margin-left: 0;
+        top: 208px;
+        right: 0;
+        left: 0;
+        width: unset;*/
+        top: 130px;
+        padding: 5px;
+        width: auto;
+        left: 5px;
+    }
+
+    .block_ludifica .tab-dynamichelps.showhelps,
+    .block_ludifica .tabranking.showranking {
+        width: 100%;
+        background: linear-gradient(90deg, rgba(61, 177, 209, 0.8) 0%, rgba(61, 177, 209, 1) 40%);
+        padding-left: 20px;
+    }
+}
