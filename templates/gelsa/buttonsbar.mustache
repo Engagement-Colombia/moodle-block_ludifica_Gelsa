@@ -31,13 +31,14 @@
 
 {{#myprofile}}
     <div class="gelsa-btns">
-        <a href="{{baseurl}}/blocks/ludifica/badges.php" class="badges-btn gelsa-btn"><span>{{#str}} badges, block_ludifica {{/str}}</span></a>
-        <a href="{{baseurl}}/blocks/ludifica/avatars.php" class="avatars-btn gelsa-btn {{#current}}current-user{{/current}}"><span>{{#str}} avatars, block_ludifica {{/str}}</span></a>
-        <a href="{{baseurl}}/blocks/ludifica/tickets.php" class="store-btn gelsa-btn {{#current}}current-user{{/current}}"><span>{{#str}} benefits, block_ludifica {{/str}}</span></a>
-        {{#player}}
+    {{#player}}
             {{#hashomeurl}}
                 <a href="{{homeurl}}" class="gelsa-btn" data-ludifica-tab="profile"><span>{{#str}} home, block_ludifica {{/str}}</span></a>
             {{/hashomeurl}}
         {{/player}}
+        <a href="{{baseurl}}/blocks/ludifica/avatars.php" class="avatars-btn gelsa-btn {{#current}}current-user{{/current}}"><span>{{#str}} avatars, block_ludifica {{/str}}</span></a>
+        <a href="{{baseurl}}/blocks/ludifica/badges.php" class="badges-btn gelsa-btn"><span>{{#str}} badges, block_ludifica {{/str}}</span></a>
+        <a href="{{baseurl}}/blocks/ludifica/tickets.php" class="store-btn gelsa-btn {{#current}}current-user{{/current}}"><span>{{#str}} benefits, block_ludifica {{/str}}</span></a>
+
     </div>
 {{/myprofile}}

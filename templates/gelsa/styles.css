@@ -1,5 +1,5 @@
 .block_ludifica {
-    background: url('pix/bg1_ludifica.png') no-repeat center center;
+    background: url('pix/bg1_ludifica.jpg') no-repeat center center;
     background-color: #383a70;
     min-height: 650px;
     background-size: cover;
@@ -10,10 +10,10 @@
 }
 
 .block_ludifica .gelsa-btn {
-    width: 130px;
+    width: 140px;
     height: 44px;
     margin-top: 15px;
-    background-color: #f6d052;
+    background-color: #1f4182 ;
     border: none;
     color: #2d3351;
     display: flex;
@@ -27,6 +27,13 @@
     transform: scale(1, 1);
 }
 
+.block_ludifica .moneda-gelsa {
+    background: url('pix/moneda-gelsa.png') no-repeat left center / contain; /* Cambia 'center center' por 'left center' */
+    padding-left: 25px; /* Ajusta el espacio entre el texto y la imagen */
+    display: inline-block; /* Asegúrate de que el span se comporte como un bloque en línea */
+    vertical-align: middle; /* Alinea verticalmente el texto si es necesario */
+}
+
 .block_ludifica .gelsa-btn::before {
     height: 44px;
     min-width: 44px;
@@ -37,7 +44,7 @@
     padding: 10px;
     margin-top: -10px;
     margin-left: -13px;
-    background: #eaaf0a url('pix/icons.png') no-repeat center center / cover;
+    background: #1970b2 url('pix/icons.png') no-repeat center center / cover;
     transform: rotate(0deg);
     transition: 0.3s ease;
     box-shadow: 0 0 0 0 #f6d052;
@@ -46,7 +53,7 @@
 .block_ludifica .gelsa-btn:hover {
     box-shadow: 0 0 10px 0 rgb(45, 51, 81);
     transform: scale(1.2, 1.2);
-    background-color: #2d3351;
+    background-color: #1970b2;
     /* stylelint-disable-next-line declaration-no-important */
     color: #fff !important;
     text-decoration: none;
@@ -67,10 +74,11 @@
     display: block;
     width: 100%;
     text-align: center;
+    color: #ffffff;
 }
 
 .block_ludifica .gelsa-btns .badges-btn::before {
-    background-position-x: -1px;
+    background-position-x: -436px;
 }
 
 .block_ludifica .gelsa-btns .top-btn::before {
@@ -78,23 +86,23 @@
 }
 
 .block_ludifica .gelsa-btns .avatars-btn::before {
-    background-position-x: -582px;
+    background-position-x: -223px;
 }
 
 .block_ludifica .gelsa-btns .store-btn::before {
-    background-position-x: -76px;
+    background-position-x: -650px;
 }
 
 .block_ludifica [data-ludifica-tab="profile"]::before {
-    background-position-x: -640px;
+    background-position-x: -10px;
 }
 
 .block_ludifica .showrankingbutton {
     font-size: 20px;
-    background-color: #3db1d1;
+    background: linear-gradient(white, #9d9b9b);
     box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
     border: none;
-    color: #2d3351;
+    color: #004282;
 }
 
 .block_ludifica .avatar-box > div:first-child {
@@ -116,11 +124,12 @@
 .ludifica_stats > h2,
 .ludifica_stats > div {
     margin-top: 7px;
-    background-color: #2d3351aa;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
     font-weight: bold;
+    background: linear-gradient(white, #9d9b9b);
 }
 
 .ludifica_stats > h2 {
@@ -143,7 +152,7 @@
 .ludifica_stats > h2 a,
 .ludifica_stats > div {
     /* stylelint-disable-next-line declaration-no-important */
-    color: #3db1d1 !important;
+    color: #004282 !important;
 }
 
 .ludifica_stats > div {
@@ -153,11 +162,11 @@
 
 .block_ludifica .showhelpsbutton {
     margin: 10px 0;
-    color: #2d3351;
-    background-color: #3db1d1;
+    color: #004282;
+    background: linear-gradient(white, #9d9b9b);
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
 }
@@ -187,6 +196,7 @@
 }
 
 .ludificalevel {
+    display: none;
     background-color: #2d3351cc;
     color: #3db1d1;
     position: absolute;
@@ -272,7 +282,7 @@
 }
 
 .block_ludifica .generaltable th {
-    background-color: #2d3351;
+    background-color: #004282;
 }
 
 .block_ludifica .generaltable th:first-child {
@@ -365,9 +375,9 @@
 }
 
 .block_ludifica .userbadges-ludifica {
-    background: linear-gradient(0deg, rgba(45, 51, 81, 1) 24%, rgba(45, 51, 81, 0) 100%);
+    background: linear-gradient(0deg, rgb(255 255 255 / 68%) 24%, rgba(45, 51, 81, 0) 100%);
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     padding: 35px 0 15px 0;
     border-radius: 0.5rem;
     width: 100%;
@@ -421,7 +431,7 @@
 
 .block_ludifica-tabcontent h3,
 .block_ludifica-tabcontent h5 {
-    color: #f6d052;
+    color: #ffffff;
     font-weight: bolder;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.531);
 }
@@ -437,7 +447,7 @@
 .block_ludifica .tab-profile .gelsa-btns [data-ludifica-tab="profile"] {
     box-shadow: 0 0 10px 0 rgb(45, 51, 81);
     transform: scale(1.2, 1.2);
-    background-color: #2d3351;
+    background-color: #1970b2;
     color: #fff;
     text-decoration: none;
     border: 1px solid #eaaf0a;
@@ -571,7 +581,7 @@
     box-shadow: 0 0 0 0 #f6d052;
     filter: contrast(100%) brightness(100%);
     background: none;
-    border: 1px solid #eaaf0a;
+    /* border: 1px solid #eaaf0a; */
 }
 
 #page-blocks-ludifica-avatars #avatars-list .userhas .card {
@@ -591,9 +601,9 @@
 }
 
 #page-blocks-ludifica-avatars #avatars-list .oneavatar:hover .card {
-    box-shadow: 0 0 20px 0 #f6d052;
+    box-shadow: 0 0 20px 0 #ffffff;
     animation: hover-animation 0.3s forwards;
-    background-color: #f6d052;
+    background-color: #ffffff;
 }
 
 #page-blocks-ludifica-avatars #avatars-list .oneavatar:hover .card-header {
@@ -624,7 +634,7 @@
 }
 
 #page-blocks-ludifica-avatars #avatars-list .oneavatar .card .card-header {
-    color: #f6d052;
+    color: #ffffff;
     text-align: center;
     background: none;
     border: none;
@@ -632,7 +642,7 @@
 
 #page-blocks-ludifica-avatars #avatars-list .oneavatar .btn-primary,
 #page-blocks-ludifica-tickets #tickets-list .oneticket .btn-primary {
-    background-color: #2d3351;
+    background-color: #002657;
     border: 1px solid #3db1d1;
     color: #fff;
     margin: 5px;
@@ -641,7 +651,7 @@
 #page-blocks-ludifica-avatars #avatars-list .oneavatar .btn-primary:hover,
 #page-blocks-ludifica-tickets #tickets-list .oneticket .btn-primary:hover,
 #page-blocks-ludifica-badges #badges-list .openshare:hover {
-    background-color: #eaaf0a;
+    background-color: #3db1d1;
     color: #2d3351;
     border: 1px solid #2d3351;
 }
@@ -703,8 +713,9 @@
 
 .block_ludifica #tickets-list .card {
     background: none;
-    border: 1px solid #3db1d1;
-    color: #fff;
+    border: 1px solid #ffffff36;
+    color: #002657;
+    background-color: #ffffff96;
     box-shadow: 0 0 0 0 #3db1d1;
     filter: contrast(100%) brightness(100%);
     transform: perspective(1px);
@@ -722,7 +733,7 @@
 .block_ludifica #tickets-list .card-header {
     font-size: 19px;
     text-align: center;
-    color: #3db1d1;
+    color: #002657;
     background: none;
     border: none;
 }
@@ -733,7 +744,7 @@
 }
 
 .block_ludifica #tickets-list .moreinfo-ticket {
-    color: #3db1d1;
+    color: #002657;
     position: absolute;
     right: 0;
 }
@@ -760,13 +771,13 @@
 }
 
 .block_ludifica #tickets-list .card .info-box strong {
-    color: #e59428;
+    color: #002657;
 }
 
 .block_ludifica #tickets-list .card:hover .info-box strong,
 .block_ludifica .rankingheader + p,
 .block_ludifica .notavailableyet {
-    color: #fff;
+    color: #004282;
 }
 
 .block_ludifica p {
@@ -792,15 +803,8 @@
 }
 
 .block_ludifica #badges-list .unavailable .card {
+    pointer-events: none;
     background: none;
-    animation: none;
-    transform: none;
-    box-shadow: unset;
-}
-
-.block_ludifica #badges-list .unavailable .card:hover .card-header,
-.block_ludifica #badges-list .unavailable .card:hover .info-box {
-    color: #fff;
 }
 
 .block_ludifica #badges-list .unavailable .openshare {
@@ -813,11 +817,6 @@
     color: #f6d052;
     background: none;
     border: none;
-}
-
-.block_ludifica #badges-list .courseinfo {
-    text-align: center;
-    padding: 5px;
 }
 
 .block_ludifica #badges-list .card:hover .card-header,
