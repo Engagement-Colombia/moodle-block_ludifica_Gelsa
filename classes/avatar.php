@@ -135,7 +135,7 @@ class avatar extends entity {
     public static function default_avatar() {
         global $OUTPUT;
 
-        return $OUTPUT->image_url('defaultavatar', 'block_ludifica');
+        return $OUTPUT->image_url('avatar_gris-8', 'block_ludifica');
     }
 
     /**

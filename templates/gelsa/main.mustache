@@ -66,40 +66,18 @@
                 <div class="card-header">
                     {{#str}} dynamic_help_title, block_ludifica {{/str}}
                 </div>
-
                 {{#helpvars}}
                 <div class="card-body">
                     <ul class="list-group">
-                        {{#pointsbyendcourse}}
                             <li class="list-group-item d-flex">
-                                {{#pix}} i/courseevent, core {{/pix}}
-                                <div>
-                                    {{#hasduration}}
-                                        {{#str}} dynamic_help-pointsbyendcourseduration_site, block_ludifica, {{pointsbyendcourse}} {{/str}}
-                                    {{/hasduration}}
-                                    {{^hasduration}}
-                                        {{#str}} dynamic_help-pointsbyendcourse, block_ludifica, {{pointsbyendcourse}} {{/str}}
-                                    {{/hasduration}}
-                                </div>
+                                {{#str}} dynamic_help_body_one, block_ludifica {{/str}}
                             </li>
-                        {{/pointsbyendcourse}}
-                        {{#recurrentlogindays}}
-                            <li class="list-group-item d-flex">
-                                {{#pix}} i/scheduled, core {{/pix}}
-                                <div>{{#str}} dynamic_help-recurrentlogindays, block_ludifica, {{recurrentlogindays}} {{/str}}
-                                {{#str}} dynamic_help-pointsrecurrentlogin, block_ludifica, {{pointsbyrecurrentlogin1}} {{/str}}</div>
+                             <li class="list-group-item d-flex">
+                                {{#str}} dynamic_help_body_two, block_ludifica {{/str}}
                             </li>
                             <li class="list-group-item d-flex">
-                                {{#pix}} i/otherevent, core {{/pix}}
-                                <div>{{#str}} dynamic_help-pointsbyday, block_ludifica, {{pointsbyrecurrentlogin2}} {{/str}}</div></li>
-                            {{/recurrentlogindays}}
-                            {{#coinsbypoints}}
-                            <li class="list-group-item d-flex">
-                                {{#pix}} i/db, core {{/pix}}
-                                <div>{{#str}} dynamic_help-pointstocoins, block_ludifica, {{pointstocoins}} {{/str}}
-                                {{#str}} dynamic_help-coinsbypoints, block_ludifica, {{coinsbypoints}} {{/str}}</div>
+                                {{#str}} dynamic_help_body_three, block_ludifica {{/str}}
                             </li>
-                        {{/coinsbypoints}}
                     </ul>
                 </div>
             </div>
