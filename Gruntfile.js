@@ -40,15 +40,6 @@ module.exports = function(grunt) {
     // Globbing pattern for matching all AMD JS source files.
     var amdSrc = [inAMD ? PWD + "/src/*.js" : "**/amd/src/*.js"];
 
-    // We need to include the core Moodle grunt file too, otherwise we can't run tasks like "amd".
-    require("grunt-load-gruntfile")(grunt);
-    grunt.loadGruntfile("../../Gruntfile.js");
-
-    // Load all grunt tasks.
-    grunt.loadNpmTasks("grunt-stylelint");
-    grunt.loadNpmTasks("grunt-eslint");
-    grunt.loadNpmTasks("grunt-contrib-uglify");
-
     /**
      * Function to generate the destination for the uglify task
      * (e.g. build/file.min.js). This function will be passed to
@@ -100,14 +91,33 @@ module.exports = function(grunt) {
         },
         stylelint: {
             css: {
-                src: ["templates/*/styles.css", "styles.css"]
+                src: ["templates/*/styles.css", "styles.css"],
+                options: {
+                    configOverrides: {
+                        rules: {
+                            "at-rule-no-unknown": true,
+                        }
+                    }
+                }
             }
         },
     });
 
-    // Register tasks.
-    grunt.registerTask("css", ["stylelint"]);
-    grunt.registerTask("default", ["watch"]);
-    grunt.registerTask('amd', ['eslint:amd', 'uglify:amd']);
+    // Load contrib tasks.
+    grunt.loadNpmTasks("grunt-contrib-watch");
 
+    // Load core tasks.
+    grunt.loadNpmTasks("grunt-contrib-uglify");
+    grunt.loadNpmTasks("grunt-eslint");
+    grunt.loadNpmTasks("grunt-stylelint");
+
+    // Register tasks.
+    grunt.registerTask("css", ["stylelint:css"]);
+    grunt.registerTask("default", ["watch"]);
+
+    // Register tasks.
+    grunt.registerTask("amd", ["uglify"]);
+    grunt.registerTask("default", ["watch"]);
+
+    grunt.registerTask("compile", ["uglify"]);
 };
