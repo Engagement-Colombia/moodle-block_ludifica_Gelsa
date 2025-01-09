@@ -95,9 +95,16 @@ $string['dynamic_help-pointsrecurrentlogin'] = 'y ganar <strong>{$a} puntos</str
 $string['dynamic_help-pointstocoins'] = 'Cada que consigas <strong>{$a} puntos</strong> se te otorgarán ';
 $string['dynamic_help-recurrentlogindays'] = 'Ingresa <strong>{$a} días</strong> para iniciar una racha ';
 $string['dynamic_help_title'] = 'Bienvenido a La Ruta del Saber';
-$string['dynamic_help_body_one'] = 'Conectando con el ADN de Gelsa En Gelsa, buscamos conectar a cada colaborador con los pilares que sostienen nuestra organización. La Ruta del Saber es una experiencia diseñada para que fortalezcas tu relación con estos valores. A medida que completes los cursos asignados, acumularás monedas que te permitirán acceder a avatares y recompensas en la tienda virtual.';
-$string['dynamic_help_body_two'] = 'Los Mundos de Gelsa Cada mundo en La Ruta del Saber representa un pilar clave: Juegos de Suerte y Azar, donde el chance, baloto y rifas son esenciales; Servicios, que destaca la precisión y eficiencia en recaudos; y Operaciones Seguras, que enfatiza la seguridad en nuestras operaciones.';
-$string['dynamic_help_body_three'] = 'Tu Progreso, Tus Recompensas Cada curso completado te permitirá ganar monedas, las cuales usarás para personalizar tu experiencia con avatares y recompensas. Estos cursos están alineados con tu rol y los pilares de Gelsa, reforzando tu vínculo con la empresa. Cada moneda que ganes reflejará tu progreso y dedicación. ¡Comienza hoy tu recorrido por La Ruta del Saber y descubre cómo tu camino se alinea con el futuro de Gelsa!';
+$string['dynamic_help_body_one'] = 'En Gelsa, queremos que cada colaborador fortalezca su conexión con los pilares que sustentan nuestra organización. La Ruta del Saber es una experiencia diseñada para alinear tu aprendizaje con estos valores, mientras acumulas monedas para desbloquear avatares y recompensas en nuestra tienda virtual.
+Te invitamos a realizar los siguientes cursos para obtener tus primeras recompensas: 
+';
+$string['dynamic_help_body_two'] = '-	Obtén la Insignia de Inducción: Inducción corporativa y Calidad en la información documentada.
+-	Obtén la Insignia de Operaciones seguras: Manejo de crisis y reputación corporativa, Sistema de gestión de la calidad, Seguridad de la información comercial, SARLAFT Acuerdo 574 de 2021 Personal Administrativo, SARL, Continuidad del Negocio, Tratamiento de Datos, Juego Responsable, Programa de Ética Empresarial y Transparencia, Juego Legal.
+';
+$string['dynamic_help_body_three'] = 'Aprende y gana recompensas
+A medida que completes los cursos asignados, ganarás monedas que podrás usar para personalizar tu experiencia y obtener recompensas. Estos cursos están alineados con tu rol y los pilares de Gelsa, reflejando tu progreso y compromiso con la empresa.
+¡Inicia hoy en La Ruta del Saber y construye un futuro conectado con Gelsa!
+';
 $string['edit'] = 'Editar';
 $string['editnickname'] = 'Editar el alias';
 $string['emailinvalidpattern'] = 'Regla para correo inválido';
