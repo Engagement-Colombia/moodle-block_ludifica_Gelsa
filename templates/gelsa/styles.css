@@ -110,6 +110,10 @@
     flex-direction: column;
 }
 
+.pointsinfo{
+    background-color: #00000066;
+}
+
 .ludifica_stats {
     position: absolute;
     top: 70px;
