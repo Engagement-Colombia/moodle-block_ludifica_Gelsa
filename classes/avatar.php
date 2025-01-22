@@ -142,14 +142,14 @@ class avatar extends entity {
         if ($template != 'default') {
             $exts = ['svg', 'png', 'jpg', 'jpeg', 'gif'];
             foreach ($exts as $ext) {
-                $path = $CFG->dirroot . '/blocks/ludifica/templates/' . $template . '/defaultavatar.' . $ext;
+                $path = $CFG->dirroot . '/blocks/ludifica/templates/' . $template . '/Silueta_personaje.' . $ext;
                 if (file_exists($path)) {
-                    return $CFG->wwwroot . '/blocks/ludifica/templates/' . $template . '/defaultavatar.' . $ext;
+                    return $CFG->wwwroot . '/blocks/ludifica/templates/' . $template . '/Silueta_personaje.' . $ext;
                 }
             }
         }
 
-        return (string)$OUTPUT->image_url('defaultavatar', 'block_ludifica');
+        return (string)$OUTPUT->image_url('Silueta_personaje', 'block_ludifica');
     }
 
     /**
