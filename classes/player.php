@@ -212,7 +212,7 @@ class player extends entity {
      * @param object|null $infodata Information depend of points type
      * @param int|null $objectid Other item related with the points.
      */
-    public function add_points(int $newpoints, int $courseid, string $type, ?object $infodata, ?int $objectid) {
+    public function add_points(int $newpoints, int $courseid, string $type, ?object $infodata = null, ?int $objectid = null) {
         global $DB;
 
         $totalpoints = $newpoints + $this->data->general->points;
